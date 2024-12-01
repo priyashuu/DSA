@@ -13,7 +13,6 @@
 
 ---
 
-### Example README File
 
 #### **Linear Search Program in Java**
 
