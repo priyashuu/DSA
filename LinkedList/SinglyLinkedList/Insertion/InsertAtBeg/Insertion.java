@@ -52,6 +52,7 @@ public class Insertion {
        LinkedList ll = new LinkedList();
        ll.insertAtBeg(7);
        ll.insertAtBeg(6);
+       ll.insertAtBeg(0);
    
        ll.insertAtEnd(90);
        ll.insertAtBeg(45);
