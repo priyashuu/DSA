@@ -45,9 +45,34 @@ public class Insertion {
           }
           System.out.println();
        }
+       public static int length(Node head){
+        int count =0;
+        while(head!= null){
+            count ++;
+            head=head.next;
+    
+        }
+        return count;
+       }
+       
        void insertAtSpec(int idx ,int val){
         Node t = new Node(val);
         Node temp = head;
+        if (idx==length(temp)){
+            insertAtEnd(val);
+            return;
+        }else if (idx==0){
+            insertAtBeg(val);
+            return;
+        }
+        else if (idx<0){
+            System.out.println("wrong index");
+            return;
+        }
+        else if (idx>length(temp)){
+            System.out.println("wrong index");
+            return;
+        }
         for (int i =1 ; i<=idx-1 ; i++){
             temp=temp.next;
 
