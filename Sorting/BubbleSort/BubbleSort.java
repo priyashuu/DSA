@@ -13,8 +13,6 @@ public class BubbleSort {
 
         }
         for (i =1 ;i<n-1;i++  ){
-       
-
              for (k=0 ; k<n-i-1;k++){ 
                 if (a[k] > a[k+1]){
                     temp =a[k];
