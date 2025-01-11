@@ -15,7 +15,7 @@ public class SelectionSort {
             a[i]=sc.nextInt();
 
         }
-        for (i=0;i< n-1;i++){
+        for (i=0;i<n-1;i++){
             loc=i;
             for (j=i+1;j< n;j++){
                if(a[j]<a[loc]){
