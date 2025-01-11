@@ -21,8 +21,7 @@ public class LinearSearch {
             if (a[i]== item){
                 c++;
                 break;
-            }
-            
+            }   
         }
         if (c>0){
             System.out.println("Item exists");
