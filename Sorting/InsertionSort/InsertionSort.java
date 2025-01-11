@@ -13,7 +13,7 @@ public class InsertionSort {
             a[i] = sc.nextInt();
         }
         //insertion sort 
-        for (i=1;i<=n-1;i++)
+        for (i=1;i<n;i++)
         {
             temp =a[i]; // 2nd element 
             j=i-1; // 1st element
