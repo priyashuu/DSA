@@ -7,7 +7,7 @@ public class SelectionSort {
         int n , i ,loc, temp , j ;
         int [] a;
         Scanner sc = new Scanner(System.in); 
-        System.out.println("Enter the elements");
+        System.out.println("how many elements do you need ?");
         n=sc.nextInt();
         a =new int[n];
         System.out.println("Enter the elements");
@@ -17,7 +17,7 @@ public class SelectionSort {
         }
         for (i=0;i<n-1;i++){
             loc=i;
-            for (j=i+1;j< n;j++){
+            for (j=i+1;j<n;j++){
                if(a[j]<a[loc]){
                 loc =j;
                }
