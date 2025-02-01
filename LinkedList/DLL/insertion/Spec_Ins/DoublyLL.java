@@ -42,7 +42,17 @@ public class DoublyLL {
         }
     }
     public static void insertAtIdx(Node head ,int idx, int x ){
-           
+           Node s = head ;
+           for (int i =1 ; i<=idx-1; i++) {
+              s=s.next;
+           }
+           Node r = s.next;
+           Node t= new Node(x);
+           s.next =t;
+           t.prev=s;
+           t.next=r;
+           r.prev =t;
+
         
     }
     public static void main(String[] args) {
@@ -66,6 +76,7 @@ public class DoublyLL {
 
        insertAtIdx(a,2,90);
        display(a);
+       
     
         
     }
