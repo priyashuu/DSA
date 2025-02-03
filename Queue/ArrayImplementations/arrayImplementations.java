@@ -70,9 +70,10 @@ public class arrayImplementations {
         q.remove();
         q.display();
         q.peek();
+        System.out.println(q.isEmpty());
         
         System.out.println(q.size);
-        
+
         
         
     }
