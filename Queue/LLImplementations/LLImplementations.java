@@ -55,6 +55,18 @@ public class LLImplementations {
             }
 
         }
+        public boolean isEmpty(){
+            if(size ==0 )return true;
+            else return false;
+                
+        }
+        public int peek(){
+            if(size== 0){
+                System.out.println("empty is queue");
+                return -1;
+            }
+            return head.data;
+        }
        
     }
     public static void main(String[] args) {
@@ -67,6 +79,7 @@ public class LLImplementations {
         q.display();
         q.remove();
         q.display();
+        System.out.println(q.peek());;
         
     }
 }
