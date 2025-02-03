@@ -7,7 +7,7 @@ public class LLImplementations {
             this.data = data;
         }
     }
-    public static class queueLL{
+    public static class queueLL{ // user defind data structure 
         Node head = null ;
         Node tail = null;
         int size =0 ; 
@@ -15,7 +15,7 @@ public class LLImplementations {
             Node temp = new Node (x);
             if (size==0){
                 head =tail = temp;
-                System.out.println("");
+                
             }
             else {
                   tail.next=temp;
@@ -38,7 +38,7 @@ public class LLImplementations {
                 System.out.println("empty queue !");
                 return -1;
             }
-            return head.data;
+            return size;
         }
         public void display(){
             if ( size == 0 ) {
