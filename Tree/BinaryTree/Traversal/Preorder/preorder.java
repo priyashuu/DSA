@@ -19,7 +19,12 @@ public class preorder {
         preOrder(root.left);
         preOrder(root.right);
     }
+ public static  int size (Node root ){
+    if (root == null) return 0;
 
+     return 1 + size(root.left) + size(root.right);
+
+ }
     
     public static void main(String[] args) {
         Node root = new Node(2);
