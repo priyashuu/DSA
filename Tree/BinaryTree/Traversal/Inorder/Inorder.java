@@ -1,4 +1,5 @@
-public class preorder {
+package Tree.BinaryTree.Traversal.Inorder;
+public class Inorder {
     static int size =0;
 
     public static class Node {
@@ -12,20 +13,15 @@ public class preorder {
         }
 
     }
-    public static void preOrder(Node root ) {
-        if (root==null) return;
-        // System.out.print(root.data + " ");
-        size++;
-        preOrder(root.left);
-        preOrder(root.right);
+    public static void InOrder(Node root ) {
+        if (root== null) return ;
+        InOrder(root.left);
+        System.out.print(root.data + "  ");
+        InOrder(root.right);
+
     }
 
-    public static  int size (Node root ){
-    if (root == null) return 0;
-
-     return 1 + size(root.left) + size(root.right);
-
- }
+   
     
     public static void main(String[] args) {
         Node root = new Node(1);
@@ -42,8 +38,7 @@ public class preorder {
         b.left = e;
         b.right =f;
         
-        preOrder(root);
-       System.out.println(size);
+        InOrder(root);
     }
     
 }
