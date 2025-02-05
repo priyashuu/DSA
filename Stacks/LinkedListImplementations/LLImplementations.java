@@ -1,4 +1,3 @@
-import java.util.Stack;
 
 public class LLImplementations {
 
@@ -12,7 +11,8 @@ public class LLImplementations {
     public static class LLStack{ // user defined data structure
         Node head = null; 
         int size = 0;
-        void push (int x){ // everythime
+        // push method to add elements to the stack
+        void push (int x){ // everytime
             Node temp  = new Node(x);
             temp.next =head;
             head = temp;
@@ -48,6 +48,8 @@ public class LLImplementations {
             }
             System.out.println();
         }
+
+        // display method to display the elements of the stack
         void displayrec(Node h){
             if (h==null)return;
             displayrec(h.next);
