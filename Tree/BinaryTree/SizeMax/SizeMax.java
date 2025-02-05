@@ -1,3 +1,4 @@
+package Tree.BinaryTree.SizeMax;
 
 public class SizeMax  {
     public static class Node {
