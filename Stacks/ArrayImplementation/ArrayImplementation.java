@@ -1,4 +1,3 @@
-import java.util.Stack;
 
 public class ArrayImplementation {
     public static class Stack {
