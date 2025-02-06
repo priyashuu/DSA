@@ -14,7 +14,7 @@ public class LLImplementations {
 
         // add method to add elements to the queue
         public void add(int x) { // x is the element to be added
-            Node temp = new Node (x);
+            Node temp = new Node (x); //
             if (size==0){ // empty queue
                 head =tail = temp; // head and tail are the same and point to the new node
                 
