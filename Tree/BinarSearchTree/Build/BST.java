@@ -28,11 +28,24 @@ public class BST {
         System.out.print(root.data + " ");
         inorder(root.right);
     }
+    public static void preorder (Node root){
+        if (root==null) return;
+        System.out.print(root.data + " ");
+        preorder(root.left);
+       preorder(root.right);
+    }
+    public static void postorder (Node root){
+        if (root==null) return;
+       
+        postorder(root.left);
+       postorder(root.right);
+       System.out.print(root.data + " ");
+    }
     public static void main(String[] args) {
-        int value [] = {5,1,3,4,2,7};
+        int arr [] = {5,1,3,4,2,7};
         Node root = null;
-        for (int i =0 ; i<value.length; i++){
-           root = insert(root, value[i]);
+        for (int i =0 ; i<arr.length; i++){
+           root = insert(root, arr[i]);
         }
         inorder(root);
         System.out.println();

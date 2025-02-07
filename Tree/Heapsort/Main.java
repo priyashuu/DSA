@@ -1,4 +1,3 @@
-import java.util.*;
 
 class Main {
     public static void main(String[] args) {
@@ -9,13 +8,13 @@ class Main {
         buildheap(a, n);
         System.out.println("");
         // print the heap
-        for ( i = 0; i < a.length; i++) {
+        for ( i = 0; i <n; i++) {
             System.out.print(a[i] + " ");
         }
         heapsort(a, n);
         System.out.println("");
         // print the sorted array
-        for (i = 0; i < a.length; i++) {
+        for (i = 0; i<n; i++) {
 
             System.out.print(a[i] + " ");
         }
@@ -47,7 +46,6 @@ class Main {
         while (n > 0) {
             int t = a[n - 1];
             a[n - 1] = a[0];
-
             a[0] = t;
             n = n - 1;
             heapify(a, n, 0);

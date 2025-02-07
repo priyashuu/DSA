@@ -74,7 +74,8 @@ public class BST {
         System.out.println();
 
         root = delete(root, 8); // Delete node with value
-        root = delete(root, 14); 
+        root = delete(root, 14);
+        insert(root,89); 
 
         System.out.println("Inorder traversal after deletion:");
         inorder(root);
