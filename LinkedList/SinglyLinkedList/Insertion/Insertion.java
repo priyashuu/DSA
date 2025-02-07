@@ -49,7 +49,9 @@ public class Insertion {
     //     temp=temp.next;
     //    }
         display(a);
+        System.out.println();
         displayRec(a);
+        System.out.println();
         displayRev(a);
         
     }
