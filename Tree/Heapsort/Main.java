@@ -47,7 +47,6 @@ class Main {
         while (n > 0) {
             int t = a[n - 1];
             a[n - 1] = a[0];
-
             a[0] = t;
             n = n - 1;
             heapify(a, n, 0);
