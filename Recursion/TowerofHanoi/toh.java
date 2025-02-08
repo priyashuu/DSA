@@ -1,9 +1,4 @@
 //  code to implement Tower of Hanoi using recursion
-
-import java.io.*;
-import java.math.*;
-import java.util.*;
-
 public class toh {
     // Function to implement Tower of Hanoi
     public static void towerofHanoi(int n, char from_rod, char to_rod, char aux_rod) {
