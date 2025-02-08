@@ -45,8 +45,7 @@ public class ArrayImplementation {
             }
             System.out.println();
         }
-
-        // get the size of the stack
+         // get the size of the stack
         int size() {
             return idx;
         }
