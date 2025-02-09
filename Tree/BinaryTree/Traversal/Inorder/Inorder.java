@@ -1,4 +1,3 @@
-package Tree.BinaryTree.Traversal.Inorder;
 public class Inorder {
     static int size =0;
 

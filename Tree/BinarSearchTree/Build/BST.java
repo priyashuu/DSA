@@ -47,7 +47,7 @@ public class BST {
         for (int i =0 ; i<arr.length; i++){
            root = insert(root, arr[i]);
         }
-        inorder(root);
+        inorder(root); // inorder in a binary search tree gives the sorted order
         System.out.println();
     }
     

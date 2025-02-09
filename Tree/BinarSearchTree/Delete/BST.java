@@ -48,16 +48,16 @@ public class BST {
             if (root.right == null) return root.left;
 
             // Case 3: Two children
-            Node IS = inorderSuccessor(root.right); // Find the inorder successor
-            root.data = IS.data; // Replace current node's data with successor's data
-            root.right = delete(root.right, IS.data); // Delete the inorder successor
+            Node IS = inorderSuccessor(root.right); // Find the inorder successor of the node to be deleted 
+            root.data = IS.data; // Copy the inorder successor's data to the node to be deleted
+            root.right = delete(root.right, IS.data); //
         }
         return root;
     }
 
-    public static Node inorderSuccessor(Node root) {
-        while (root.left != null) {
-            root = root.left; // Find the leftmost node
+    public static Node inorderSuccessor(Node root) { // Find the inorder successor of a node in a BST   
+        while (root.left != null) { // Find the leftmost node in the right subtree of the node to be deleted in order to maintain the BST property 
+            root = root.left; // Traverse the left subtree of the right child of the node to be deleted 
         }
         return root;
     }

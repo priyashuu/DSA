@@ -47,3 +47,4 @@ class Task implements Comparable<Task> {// Comparable interface is used to compa
         return "priority=" + priority + " name=" + name ; // Return the priority and name of the task as a string 
     }
 }
+ 
