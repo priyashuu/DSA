@@ -45,10 +45,10 @@ public class BST {
         }
         inorder(root);
         System.out.println();
-       if(Search(root, 7)){
-        System.out.println("found");
+       if(Search(root, 5)){
+        System.out.println("The Key is found");
        }else{
-        System.out.println("not found");
+        System.out.println("The key is not found");
        }
     }
     
