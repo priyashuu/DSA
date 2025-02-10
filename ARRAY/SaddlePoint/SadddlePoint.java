@@ -22,35 +22,34 @@ public class SadddlePoint {
             System.out.println();
 
         }
-int min , max;
+        int min, max;
         for (i = 0; i < n; i++) {
-             min = a[i][0];
+            min = a[i][0];
             c = 0;
             for (j = 0; j < n; j++) {
                 if (a[i][j] < min) {
                     min = a[i][j];
-                    c=j;
+                    c = j;
 
                 }
 
             }
-            max = a[0][c] ;
-            for (int k=0 ;k <n ;k++) {
-                if (a[k][c] > max){
-                    max = a[k] [c];
+            max = a[0][c];
+            for (int k = 0; k < n; k++) {
+                if (a[k][c] > max) {
+                    max = a[k][c];
                 }
-                
+
             }
-            if (min== max){
+            if (min == max) {
                 f++;
             }
-            if (f>0 ){
+            if (f > 0) {
                 System.out.println("found ");
             }
-            
-            
+
         }
-        if (f== 0 ) {
+        if (f == 0) {
             System.out.println("Saddle Point is not found ");
         }
     }

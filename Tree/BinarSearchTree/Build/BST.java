@@ -41,13 +41,13 @@ public class BST {
        postorder(root.right);
        System.out.print(root.data + " ");
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         int arr [] = {5,1,3,4,2,7};
         Node root = null;
         for (int i =0 ; i<arr.length; i++){
            root = insert(root, arr[i]);
         }
-        inorder(root); // inorder in a binary search tree gives the sorted order
+        inorder(root); // inorder in a binary sear
         System.out.println();
     }
     
